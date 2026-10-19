@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #F6F5F2;
+    color: #0F172A;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #F6F5F2;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #CBD5E1;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #6366F1;
+  }
+}
+
+/* Architectural fine dot-matrix canvas */
+.bg-architectural-dots {
+  background-image: radial-gradient(rgba(15, 23, 42, 0.065) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+/* $10k Studio Bento Card Surface */
+.bento-card {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(226, 232, 240, 0.95);
+  box-shadow:
+    0 1px 2px rgba(15, 23, 42, 0.03),
+    0 12px 32px -12px rgba(15, 23, 42, 0.06),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.9);
+  transition:
+    transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bento-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(99, 102, 241, 0.35);
+  box-shadow:
+    0 4px 12px rgba(99, 102, 241, 0.06),
+    0 20px 40px -16px rgba(15, 23, 42, 0.1),
+    inset 0 1px 0 0 rgba(255, 255, 255, 1);
+}
+
+/* SVG Logo Self-Drawing Stroke Animation */
+@keyframes drawStroke {
+  0% {
+    stroke-dashoffset: 180;
+    opacity: 0.3;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+.logo-draw-path {
+  stroke-dasharray: 180;
+  stroke-dashoffset: 0;
+  animation: drawStroke 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.logo-draw-path-delayed {
+  stroke-dasharray: 180;
+  stroke-dashoffset: 0;
+  animation: drawStroke 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.12s forwards;
+}
+
+.animated-gradient-text {
+  background-size: 200% 200%;
+  animation: gradient-shimmer 5s ease infinite;
+}
