@@ -9,7 +9,7 @@ import SkillsSection from './components/SkillsSection';
 import ContactSection from './components/ContactSection';
 import BrandLogo from './components/BrandLogo';
 
-const SOCIAL_STORAGE_KEY = 'saiyed_maaz_socials_v2';
+const SOCIAL_STORAGE_KEY = 'saiyed_maaz_socials_v3';
 
 export default function App() {
   const [showSplash, setShowSplash] = useState(true);

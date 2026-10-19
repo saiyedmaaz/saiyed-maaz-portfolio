@@ -11,8 +11,8 @@ export const portfolioData = {
     degree: "Bachelor of Computer Applications (BCA)",
     availability: "Available for Freelance & Internships",
     socials: {
-      github: "https://github.com/saiyedmaaz98",
-      githubHandle: "github.com/saiyedmaaz98",
+      github: "https://github.com/saiyedmaaz",
+      githubHandle: "github.com/saiyedmaaz",
       linkedin: "https://www.linkedin.com/in/saiyed-maaz/",
       linkedinHandle: "in/saiyed-maaz",
     },
@@ -57,6 +57,20 @@ export const portfolioData = {
         "Draw mathematical equations in mid-air via webcam fingertip tracking. Uses MediaPipe Hands and asynchronous Google Gemini Vision AI to solve equations live.",
       tags: ["Python", "OpenCV", "MediaPipe", "Gemini AI"],
       theme: "teal",
+      previewType: "vision-canvas",
+    },
+    {
+      id: "ai-prescription-reader",
+      title: "AI Prescription Reader",
+      subtitle: "Node.js + Gemini Vision Bilingual Medicine Guide",
+      category: "AI & Python",
+      year: "2026",
+      featured: true,
+      metric: "Bilingual AI OCR",
+      summary:
+        "AI-powered medical prescription reader built with a Node.js backend and Google Gemini Vision API to provide clear, bilingual medicine explanations.",
+      tags: ["Node.js", "Gemini Vision API", "JavaScript", "Healthcare AI"],
+      theme: "indigo",
       previewType: "vision-canvas",
     },
     {
