@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <linearGradient id="smGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5" />
+      <stop offset="50%" stop-color="#7C3AED" />
+      <stop offset="100%" stop-color="#0D9488" />
+    </linearGradient>
+    <linearGradient id="smSoft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EEF2FF" />
+      <stop offset="100%" stop-color="#F0FDFA" />
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="104" height="104" rx="30" fill="url(#smSoft)" stroke="url(#smGrad)" stroke-width="5" />
+  <!-- Geometric S + M Monogram -->
+  <path
+    d="M34 46C34 38 42 34 50 38C56 41 56 48 48 53L40 58C33 63 34 74 44 77C51 79 57 75 59 69"
+    stroke="url(#smGrad)"
+    stroke-width="7.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M58 76V42L72 62L86 42V76"
+    stroke="url(#smGrad)"
+    stroke-width="7.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <circle cx="88" cy="30" r="5" fill="#14B8A6" />
+</svg>
